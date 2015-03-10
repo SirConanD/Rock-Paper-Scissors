@@ -18,6 +18,7 @@ public class RockPaperScissorsFrame extends Frame
 	
 	private void setupFrame()
 	{
-		
+		this.setContentPane(basePanel);
+		this.setVisible(true);
 	}
 }
