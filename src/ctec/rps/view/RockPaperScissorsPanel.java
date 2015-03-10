@@ -3,7 +3,10 @@ package ctec.rps.view;
 import java.awt.Color;
 import java.awt.LayoutManager;
 import java.awt.Panel;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
+
 import ctec.rps.controller.RockPaperScissorsController;
 
 public class RockPaperScissorsPanel extends Panel
@@ -66,6 +69,9 @@ public class RockPaperScissorsPanel extends Panel
 	
 	private void setupListener()
 	{
-		
+		rockButton.addActionListener(new ActionListener()
+		{
+			
+		}
 	}
 }
