@@ -77,7 +77,7 @@ public class RockPaperScissorsPanel extends Panel
 		{
 			public void actionPreformed(ActionEvent click)
 			{
-				for()
+				if(baseController.getMyGame().randomChoice() == 0)
 				{
 					
 				}
@@ -86,23 +86,17 @@ public class RockPaperScissorsPanel extends Panel
 		
 		paperButton.addActionListener(new ActionListener()
 		{
-			public void anctionPreformed(ActionEventListener()
+			public void actionPreformed(ActionEvent click)
 			{
-				for()
-				{
-					
-				}
+				
 			}
 		});
 			
 		scissorsButton.addActionListener(new ActionListener()
 		{
-			public void anctionPreformed(ActionEventListener()
+			public void anctionPreformed(ActionEvent click)
 			{
-				for()
-				{
-					
-				}
+			
 			}
 		});
 	}
