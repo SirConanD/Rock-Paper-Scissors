@@ -3,6 +3,7 @@ package ctec.rps.view;
 import java.awt.Color;
 import java.awt.LayoutManager;
 import java.awt.Panel;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
@@ -19,6 +20,9 @@ public class RockPaperScissorsPanel extends Panel
 	private JScrollPane displayPane;
 	private SpringLayout baseLayout;
 	private JTextField simpleField;
+	private JTextField winField;
+	private JTextField loseField;
+	private JTextField tieField;
 	
 	public RockPaperScissorsPanel(RockPaperScissorsController baseController)
 	{
@@ -71,7 +75,35 @@ public class RockPaperScissorsPanel extends Panel
 	{
 		rockButton.addActionListener(new ActionListener()
 		{
+			public void actionPreformed(ActionEvent click)
+			{
+				for()
+				{
+					
+				}
+			}
+		});
+		
+		paperButton.addActionListener(new ActionListener()
+		{
+			public void anctionPreformed(ActionEventListener()
+			{
+				for()
+				{
+					
+				}
+			}
+		});
 			
-		}
+		scissorsButton.addActionListener(new ActionListener()
+		{
+			public void anctionPreformed(ActionEventListener()
+			{
+				for()
+				{
+					
+				}
+			}
+		});
 	}
 }
