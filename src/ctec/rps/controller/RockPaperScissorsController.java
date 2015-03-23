@@ -1,5 +1,6 @@
 package ctec.rps.controller;
 
+import ctec.rps.model.RockPaperScissors;
 import ctec.rps.view.RockPaperScissorsFrame;
 
 public class RockPaperScissorsController

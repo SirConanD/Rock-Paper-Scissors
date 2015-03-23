@@ -10,7 +10,7 @@ import javax.swing.*;
 
 import ctec.rps.controller.RockPaperScissorsController;
 
-public class RockPaperScissorsPanel extends Panel
+public class RockPaperScissorsPanel extends JPanel
 {
 	private RockPaperScissorsController baseController;
 	private JButton rockButton;
@@ -75,28 +75,48 @@ public class RockPaperScissorsPanel extends Panel
 	{
 		rockButton.addActionListener(new ActionListener()
 		{
-			public void actionPreformed(ActionEvent click)
+			public void actionPerformed(ActionEvent click)
 			{
 				if(baseController.getMyGame().randomChoice() == 0)
 				{
+					baseController.getMyGame().setTieCount(baseController.getMyGame().getTieCount()+1);
 					
 				}
+				else if(baseController.getMyGame().randomChoice() == 1)
+				{
+					baseController.getMyGame().setLoseCount(baseController.getMyGame().GetLoseCount()+1);
+				}
+				else if(baseController.getMyGame().randomChoice() == 2)
+				{
+					baseController.getMyGame().setWinCount(baseController.getMyGame().getWinCount()+1);
+				}
+				
+				
+				winField.setText("wins" +baseController.getMyGame().getWinCount());
+				loseField.setText("Losses" +baseController.getMyGame().getLoseCount());
+				
 			}
 		});
 		
 		paperButton.addActionListener(new ActionListener()
 		{
-			public void actionPreformed(ActionEvent click)
+			public void actionPerformed(ActionEvent click)
 			{
-				
+				if(baseController.getMyGame().randomChoice() == 1)
+				{
+					
+				}
 			}
 		});
 			
 		scissorsButton.addActionListener(new ActionListener()
 		{
-			public void anctionPreformed(ActionEvent click)
+			public void actionPerformed(ActionEvent click)
 			{
-			
+				if(baseController.getMyGame().randomChoice() == 2)
+				{
+					
+				}
 			}
 		});
 	}

@@ -1,12 +1,11 @@
 package ctec.rps.view;
 
-import java.awt.Frame;
-import java.awt.GraphicsConfiguration;
-import java.awt.HeadlessException;
+import javax.swing.JFrame;
+
 import ctec.rps.controller.RockPaperScissorsController;
 import ctec.rps.view.RockPaperScissorsPanel;
 
-public class RockPaperScissorsFrame extends Frame
+public class RockPaperScissorsFrame extends JFrame
 {
 	private RockPaperScissorsPanel basePanel;
 	
